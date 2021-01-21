@@ -1,0 +1,97 @@
+*{
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  font-family: 'Hachi Maru Pop', cursive;
+}
+div.hbg{
+  margin-top: 3vw;
+  background-image: linear-gradient(to right, red, hotpink,purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50vw;
+  height: 7vw;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-radius: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 20px 20px 5px;
+
+}
+#heading{
+  position: relative;
+  color: black;
+  border-radius: 10px;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 10px;
+  text-shadow: 3px 3px 10px yellow;
+}
+body{
+  background-image: url(https://images.unsplash.com/photo-1530714457710-6bf1899c1d32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  z-index: 1;
+}
+.container .card{
+  position: relative;
+  width: 300px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  background-image: url(https://1.bp.blogspot.com/-azp5CNOvTpw/YAkPyqLZ31I/AAAAAAAAA4s/8NQmk40968cmw59tYCz00YXik9a9FIrnACLcBGAsYHQ/s320/transparentME.png);
+  background-size: cover;
+  /* background: rgba(255, 255, 255, 0.2); */
+  /* clip-path: polygon(50% 0, 100% 0, 100% 50%, 49% 100%, 0 100%, 0 50%); */
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.container .card .content{
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  transition: 0.5s;
+  z-index: 5;
+  opacity: 0;
+}
+.container .card:hover .content{
+  transform: translateY(-150px);
+  font-size: 1.5vw;
+  color: white;
+  text-shadow: 2px 2px 5px gray;
+  opacity: 1;
+}
+.container .card .content h2{
+  position: absolute;
+  top: 13vw;
+  right: 100px;
+  font-size: 5em;
+  z-index: -10;
+  color: rgba(0,0,0,0.2);
+  text-shadow: none;
+  transform: none;
+
+}
+.link{
+  text-decoration: none;
+}
